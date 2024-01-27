@@ -5,49 +5,33 @@
 var saveBtn = $(".saveBtn");
 
 
-
 function displayCurrentDay() {
     var currentDate = moment().format('dddd MMMM do YYYY, h:mm:ss A');
     $("#currentDay").text(currentDate);
 
 }
 
+function timeColorCode() {
+  var hour = moment().hours();
+  console.log("Current hour:", hour);
+
+  $(".time-block").each(function() {
+    var currentHour = parseInt($(this).attr("id").split("-")[1]);
+    console.log("Block hour:", currentHour);
+
+    if (currentHour > hour) {
+      $(this).addClass("future").removeClass("past present");
+    } else if (currentHour === hour) {
+      $(this).addClass("present").removeClass("past future");
+    } else {
+      $(this).addClass("past").removeClass("present future");
+    }
+  });
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+timeColorCode();
 displayCurrentDay();
 
 
