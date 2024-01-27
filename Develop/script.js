@@ -31,13 +31,11 @@ function timeColorCode() {
 }
 
 // Creating a click event for the saveBtn
-
 saveBtn.on("click", function() {
   var time = $(this).siblings(".hour").text();
   var plan = $(this).siblings(".description").val();
   localStorage.setItem(time, plan);
 });
-
 
 // Creating a function for local storage
 function schedulePlanner() {
