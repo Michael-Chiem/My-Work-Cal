@@ -53,6 +53,13 @@ schedulePlanner();
 timeColorCode();
 displayCurrentDay();
 
+// Adding a clear button
+$("#clearFieldsBtn").click(function(event) {
+  event.preventDefault;
+  $("textArea").val("");
+  localStorage.clear();
+});
+
 }); // Closing the wrapping tag
 
 

@@ -11,5 +11,6 @@ I used jQuery and dayjs API to accomplished configured this program.
 5) Creating a click event for the saveBtn.
 6) Creating a function for local storage.
 7) Calling the function variables.
+8) Adding the clear button.
 
 Thank you for visiting.
