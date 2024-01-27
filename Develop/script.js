@@ -2,6 +2,9 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
+$(document).ready(function() {
+
+  
 var saveBtn = $(".saveBtn");
 
 
@@ -34,7 +37,7 @@ function timeColorCode() {
 timeColorCode();
 displayCurrentDay();
 
-
+});
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
