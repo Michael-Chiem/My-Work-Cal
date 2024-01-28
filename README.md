@@ -13,4 +13,7 @@ I used jQuery and dayjs API to accomplished configured this program.
 7) Calling the function variables.
 8) Adding the clear button.
 
+![Alt text](Assets/Work-Cal.gif)
+
 Thank you for visiting.
+
